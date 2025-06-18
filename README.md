@@ -1,5 +1,4 @@
-做一个简单的codex例子
-1. 创建mac 应用可以截屏后进行标注的应用
+
 
 # Screenshot Annotation App
 
@@ -23,3 +22,28 @@ A simple example repository demonstrating how to build a macOS application that 
 2. Use the capture button or your preferred screenshot shortcut to take a shot.
 3. Annotate the image using the provided tools.
 4. Save or share the annotated screenshot.
+=======
+# Screenshot App Example
+
+This repository demonstrates a minimal screenshot utility written in Python. It
+lets you select an area of the screen, capture it and draw simple shapes on the
+resulting image.
+
+## Requirements
+
+* Python 3
+* Pillow (`pip install pillow`)
+
+Image capturing on some Linux systems also requires the `scrot` package.
+
+## Running
+
+```bash
+pip install pillow
+python3 screenshot_app/screenshot_app.py
+```
+
+Click **Capture**, drag to select the desired region and release the mouse. An
+editor window will appear where you can draw red lines or rectangles over the
+screenshot.
+
